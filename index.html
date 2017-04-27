@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/Tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}      </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/Historia5.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Teléfono Celular</h1>
+</div>
+
+
+
+<div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/celular1.jpg" alt="Celular1" title="Celular1" id="wows1_0"/></li>
+		<li><img src="data1/images/clasificacion1.jpg" alt="clasificacion1" title="clasificacion1" id="wows1_1"/></li>
+		<li><img src="data1/images/companias2.jpg" alt="companias2" title="companias2" id="wows1_2"/></li>
+		<li><img src="data1/images/futuro1.jpg" alt="futuro1" title="futuro1" id="wows1_3"/></li>
+		<li><img src="data1/images/historia2.jpg" alt="Historia2" title="Historia2" id="wows1_4"/></li>
+		<li><img src="data1/images/historia4.jpg" alt="Historia4" title="Historia4" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/celular2.jpg" alt="jquery slider" title="Celular2" id="wows1_6"/></a></li>
+		<li><img src="data1/images/clasificacion2.jpg" alt="clasificacion2" title="clasificacion2" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Celular1"><span><img src="data1/tooltips/celular1.jpg" alt="Celular1"/>1</span></a>
+		<a href="#" title="clasificacion1"><span><img src="data1/tooltips/clasificacion1.jpg" alt="clasificacion1"/>2</span></a>
+		<a href="#" title="companias2"><span><img src="data1/tooltips/companias2.jpg" alt="companias2"/>3</span></a>
+		<a href="#" title="futuro1"><span><img src="data1/tooltips/futuro1.jpg" alt="futuro1"/>4</span></a>
+		<a href="#" title="Historia2"><span><img src="data1/tooltips/historia2.jpg" alt="Historia2"/>5</span></a>
+		<a href="#" title="Historia4"><span><img src="data1/tooltips/historia4.jpg" alt="Historia4"/>6</span></a>
+		<a href="#" title="Celular2"><span><img src="data1/tooltips/celular2.jpg" alt="Celular2"/>7</span></a>
+		<a href="#" title="clasificacion2"><span><img src="data1/tooltips/clasificacion2.jpg" alt="clasificacion2"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es un Teléfono Celular</h2>
+<p> Teléfono Celular</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia del Teléfono Celular</h2>
+<p> Historia del Teléfono</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Clasificación del Teléfono Celular</h2>
+<p>Clasificación de los Teléfonos</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Compañias que manejan la Teléfonia Celular en México</h2>
+<p> Compañias que manejan la Teléfonia </p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Teléfonos del Futuro</h2>
+<p> Caractéristicas de los Teléfonos del Futuro</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Logo.jpg" width="46" height="46">
+</div>
+<div>
+<h4> Aplicacion Uno </h4>
+<h4>Natalia Carranza Sanchez</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> ¿Qué es un Teléfono Celular? </h1>
+</div>
+
+<div data-role="content" align="center">
+<div>
+<h2> Un teléfono móvil o celular es un teléfono portátil que permite tener acceso a la red para así poder comunicarse por llamadas de voz, mensajes de texto, mediante una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico, a la cual permite acceder a Internet. Un teléfono móvil o celular es un teléfono portátil que permite tener acceso a la red para así poder comunicarse por llamadas de voz, mensajes de texto, mediante una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico, a la cual permite acceder a Internet.  </h2>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/Celular1.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/Celular2.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos, NCS</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Historia del Teléfono Celular </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> <p> El sistema celular consiste en la subdivisión de un territorio en pequeñas áreas (llamadas celdas), cada una con una antena de transmisión, de forma que la misma frecuencia puede utilizarse en distintas zonas a la vez dentro de una ciudad. Esto permite un uso mucho más eficiente del espectro. Cuanto más pequeñas sean las celdas, más frecuencias pueden reusarse y más usuarios pueden utilizar el servicio.
+
+En la década de los 60 todas las grandes compañías de telecomunicaciones conocían el concepto celular; la pregunta era qué compañía conseguiría hacer funcionar la idea, tanto técnica como económicamente, y quién conseguiría la patente del sistema en primer lugar. Finalmente los Laboratorios Bell presentó un sistema que cumplía con los requisitos, cuya patente fue aprobada en 1972.15 16 Un año después, en 1973, Martin Cooper y su equipo de Motorola demostraron el primer prototipo funcional de un teléfono celular "personal". </p> 
+ <p> <center>Primera generación. </center> </p>
+
+<p> Martin Cooper, utilizando un Motorola DynaTAC.
+El 3 de abril de 1973,18 Martín Cooper directivo de Motorola realizó la primera llamada desde un teléfono móvil del proyecto DynaTAC 8000X desde una calle de Nueva York.19 precisamente a su mayor rival en el sector de telefonía: Joel Engel, de los Bell Labs de AT&T. </p>
+<p> El teléfono pesaba cerca de 1 kg, tenía un tamaño de 33.02 x 4,445 x 8,89 centímetros y su batería duraba una hora de comunicación o una jornada laboral (ocho horas) en espera, con pantalla led..
+del mundo de telefonía móvil tal como se entiende hasta hoy en día. </p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/Historia1.png" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<p> Segunda generación. </p>
+
+<p> En la década de 1990 nace la segunda generación, que utiliza sistemas como GSM, IS-136, iDEN e IS-95. Las frecuencias utilizadas en Europa fueron de 900 y 1800 MHz. </p>
+<p>El desarrollo de esta generación tiene como piedra angular la digitalización de las comunicaciones. Las comunicaciones digitales ofrecen una mejor calidad de voz que las analógicas. </p>
+
+<p> Muchas operadoras telefónicas móviles implementaron Acceso múltiple por división de tiempo y Acceso múltiple por división de código, obre las redes Amps existentes convirtiéndolas así en redes D-AMPS. </p>
+ <p> Esto trajo como ventaja para estas empresas poder lograr una migración de señal analógica a señal digital. La gran diferencia es que con la tecnología digital se hizo posible hacer Multiplexion. </p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/Historia2.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<p> <center> Generación 2.5G </center> </p>
+<p> Dado que la tecnología de 2G fue incrementada a 2.5G, en la cual se incluyen nuevos servicios como EMS y MMS:</p>
+
+ <p> EMS es el servicio de mensajería mejorado, permite la inclusión de melodías e iconos dentro del mensaje basándose en los sms; un EMS equivale a 3 o 4 sms.
+MMS (Sistema de Mensajería Multimedia) Este tipo de mensajes se envían mediante GPRS y permite la inserción de imágenes, sonidos, videos y texto.< /p>
+
+<p> <center> Tercera generación </center> </p>
+<p>3G nace de la necesidad de aumentar la capacidad de transmisión de datos para poder ofrecer servicios como la conexión a Internet desde el móvil, la videoconferencia, la televisión y la descarga de archivos. En este momento el desarrollo tecnológico ya posibilita un sistema totalmente nuevo: UMTS (Universal Mobile Telecommunications System).</p>
+
+<p> <center> Cuarta generación </center> </p>
+<p> La generación 4, o 4G, es la evolución tecnológica que ofrece al usuario de telefonía móvil, internet con más rapidez un mayor ancho de banda que permite, entre muchas otras cosas, la recepción de televisión en alta definición.  </p>
+
+ </h2></div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/Historia3.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Historia','','imagenes/Historia5.jpg',1)"><img src="imagenes/Historia4.jpg" width="270" height="187" id="Historia"></a></div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos, NCS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Clasificación del Teléfono Celular</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+         <h2>
+         <p> La evolución de los teléfonos inteligentes ha llevado a los fabricantes de estos dispositivos a una lucha incansable por integrar cada vez más elementos que le brinden al usuario una experiencia de uso óptima sin importar si se emplea el aparato para asuntos laborales o entretenimiento. Hoy estos equipos ya son considerados computadores miniatura en los que, gracias a sus capacidades de procesamiento, es posible realizar tareas avanzadas para las que anteriormente era obligatorio un PC. </p>
+<p> Gama Alta </p>
+ <p> Pantalla de alta definición </p>
+ <p> Procesador de varios núcleos </p>
+ <p> Force Touch / 3D Touch </p>
+ <p> Almacenamiento superior </p>
+ <p> Cámaras de alta calidad </p>
+ <p> Batería de gran duración </p>
+ <p> Protección al agua y al polvo </p>
+ <p> Lector de huellas en los celulares </p>
+ <p>  iPhone 7 / 7 Plus, Sony Xperia XZ, LG V20, Google Pixel XL, Huawei Mate 9 Pro, OnePlus 3T, Xiaomi Mi Mix.</p>
+         
+         <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/clasificacion1.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<p> Entre las características de los terminales de gama media-alta, podríamos establecer promedios que van.</p>
+
+ <p> memorias internas de entre 16 y 32 GB </p>
+ <p> Pantallas de 5 pulgadas (poco más o poco menos) </p>
+ <p> procesadores Octa-Core. </p>
+ <p> En memoria RAM el promedio es de 3 a 4 GB. </p>
+ <p> lectores de tarjeta externa </p>
+ <p> En pixeles de cámara pueden encontrarse más diferencias </p>
+ <p> Telefonos </p>
+ <p> ZTE Axon 7, OnePlus 3, iPhone SE, Moto Z Play, Samsung Galaxy A5 2016, Honor 8, LG X MACH, Oppo R9S Plus </p>
+
+         
+         <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/clasificacion2.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<p> Los de esta última categoría descienden a este nivel de baja gama plus que hemos establecido, en la cual alojamos también a smartphones que combinan las características </p>
+
+ <p> Almenos display de 3 pulgadas </p>
+ <p> Enlace a redes 3G </p>
+ <p> Procesador de un núcleo con frecuencia de velocidad de 1 GHz  </p>
+ <p> Batería de 1.100 miliamperios-hora </p>
+ <p> Motorola, Alcatel, LG, Lenovo, Lanix, Alcatel y Xiaomi </p>
+
+         
+         <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/clasificacion3.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+         
+         </h2></div>
+       </div>
+      
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, NCS</h4>
+        </div>
+        </div>
+        
+        
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Compañias que manejan la Teléfonia Celular en México</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+ <h2><p> Inicios de la telefonía móvil
+El inicio de la telefonía móvil en México se remonta a 1977, cuando se solicitó a la SCT de México (Secretaría de Comunicaciones y Transportes) una concesión para instalar, operar y explotar un sistema de radiotelefonía móvil en el Distrito Federal. Pero no fue hasta 1981 cuando se inició la comercialización de este servicio, el cual fue conocido por el público como Teléfono en el Auto, con el cual se logró, en un lapso de ocho meses, dar servicio a 600 usuarios.</p>
+
+<p> <a href="http://www.telcel.com/">  Telcel  </a></p> 
+<p> <a href="http://www.movistar.com.mx/"> Movistar </a> </p>
+<p> <a href="https://www.att.com.mx/">  AT&T México </a> </p>
+
+
+</p></h2>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/Companias1.png" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/companias2.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixied">
+           <h4>Aplicacion Dos, NCS</h4>
+      </div>
+      </div>
+      </div>
+      <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1> Teléfonos del Futuro </h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2> <center> Cómo serán los teléfonos del futuro: </center> </h2>
+ <p> 
+Los nuevos teléfonos del futuro están llenos de nuevas características desde transparentes  hasta flexibles para una mejor comodidad. </p>
+        <P>Pantallas flexibles</P>
+        <p>Baterías más duraderas</p>
+        <p> Sensores 3D </>
+        <p>Nuevos materiales </p>
+        <p>Teléfonos armables</p>
+        <p>Transparentes o de papel</p>
+        
+          </h2></div>
+       </div>
+       
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/futuro1.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div><img src="imagenes/futuro2.jpg" width="50%" height="50%" alt="Teléfono Celular"></div>
+</div>
+</div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Dos, NCS</h4>
+      </div>
+     </div>
+     
+    </body>
+</html>
